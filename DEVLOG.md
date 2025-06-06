@@ -21,3 +21,34 @@
 - Add salary cost logic and EBITDA tracking
 - Enable Predicted vs Actual toggle with input override
 - Begin runway, gross margin, and LTV/CAC tracking
+
+
+
+---
+
+### ✅ Sprint 2 – Revenue & Cost Engine
+
+**Date:** June 6, 2025  
+**Status:** ✅ Completed  
+**Lead:** Kris Ericsson  
+**Sprint Type:** Functional + UI  
+**Files Affected:** `script.js`, `index.html`, `style.css`
+
+---
+
+#### 🔧 What We Built
+
+- 🧠 **Salary Engine**: Foundational logic added to calculate dynamic salary costs per employee across 60 months.
+- 💸 **NI + Pension Contributions**: Employer National Insurance (15%) and Pension (3%) accurately calculated and applied.
+- 💾 **Founders as Initial Roles**: Only Kris & Matt are included in the cost logic by default — all other roles can be added in future sprints.
+- 🧾 **Monthly EBITDA**: Now calculated live by subtracting salary + contributions from total revenue.
+- 🧮 **Total Cost Breakdown** (backend logic in place, front-end visualisation deferred to Sprint 3).
+
+---
+
+#### 🧪 Notes
+
+- Actual OPEX (e.g., marketing, rent, SaaS, accounting) will be implemented in **Sprint 3**.
+- Visual layout improved but styling refinements (alignment, spacing) will be handled separately.
+
+---
