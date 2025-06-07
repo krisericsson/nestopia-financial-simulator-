@@ -1,79 +1,64 @@
-# nestopia-financial-simulator-
-Live simulator tool for Nestopia’s financial model (revenue, growth, margin)
-# Nestopia Financial Simulator
+ Nestopia Financial Simulator
 
-**Version:** Alpha 1.0  
-**Sprint:** 1 – Revenue Engine Foundations  
-**Date:** June 6, 2025  
-**Status:** ✅ COMPLETE
+A lightweight, interactive browser-based tool designed to simulate Nestopia’s 60-month financial model with editable assumptions and live outputs. Built by Kris Ericsson (Founder), Atlas (AI Co-Pilot), and Gemini (Financial Integrity Engine).
 
----
+🚀 Project Summary
 
-## Overview
+This simulator allows investors and internal stakeholders to explore Nestopia’s financials across key metrics:
+	•	Monthly user growth
+	•	Revenue (4 streams)
+	•	Operating costs (17 line items)
+	•	EBITDA (monthly)
+	•	Live month-by-month analysis via dropdown
 
-This simulator mirrors the full 60-month Nestopia financial model. It allows investors and stakeholders to interactively explore how changes to user growth, monetisation levers, and CAC affect total revenue, margins, and profitability. Built collaboratively by Kris Ericsson and Atlas (AI), it supports financial transparency, investor confidence, and intelligent scenario planning.
+All values are sourced directly from the validated FS model, ensuring precision and clarity.
 
----
+✅ Sprint Log
 
-## Features (Sprint 1 – Completed)
+Sprint 1:
+	•	Built foundational layout (HTML/CSS structure)
+	•	Introduced month selection logic and static output box
 
-- ✅ Revenue simulation across 4 income streams:
-  - **ID Verification** (£1.49, 30% of users, one-time)
-  - **Subscriptions** (£6.99 / £9.99 monthly, 30% of users split 80/20)
-  - **Affiliate Revenue** (£1.50 per verified user, grows 15% → 30% from Month 18)
-  - **Landlord Revenue** (£15 per landlord, 1 per 30 users)
-- ✅ Dynamic user input:
-  - Month 1 user count
-  - Monthly growth rate
-- ✅ Selectable output period:
-  - Month (1–60)
-  - Annual (Years 1–5)
-  - Cumulative view
-- ✅ Clean UI with formatted output values
-- ✅ Monthly vs. Cumulative toggle
-- ✅ All figures based on actual Nestopia FS model
+Sprint 2:
+	•	Constructed salary engine with NI and pension logic
+	•	Enabled EBITDA calculation based on dynamic roles
 
----
+Sprint 3:
+	•	Added backend engine for operating costs (17 lines)
+	•	Wired output logic to pull from all cost categories
 
-## Upcoming Features (Sprint 2+)
+Sprint 4:
+	•	Hardwired user growth, revenue, and cost arrays based on validated FS model
+	•	Added all 60 months of simulator logic
 
-- Salary + staff cost inputs
-- EBITDA, Gross Margin, CAC, and LTV calculations
-- “Predicted vs Actual” user toggle
-- Growth rate scenario editor (e.g. phased growth)
-- Break-even month and runway tracker
-- Raise simulation: see how capital affects burn and runway
+Sprint 5:
+	•	Gemini joined as integrity layer to validate FS data
+	•	Final dataset confirmed from Excel sheets
+	•	Full integration of users, revenue, costs, and EBITDA
+	•	Simulator now functioning end-to-end with correct monthly outputs
 
----
+🛠 Setup Instructions
 
-## Built With
+To run the simulator locally:
+	1.	Clone or download the repo
+	2.	Make sure the following files are in the same directory:
+	•	index.html
+	•	script.js
+	•	data.js
+	3.	Open index.html in your browser (double click or right-click > Open With > Chrome/Safari/etc.)
 
-- HTML / CSS / Vanilla JavaScript
-- Runs locally in-browser
-- GitHub for version control
-- Development journal logged by Kris & Atlas
+⚠️ If you move any files into subfolders, update the <script> path in index.html accordingly.
 
----
+📁 File Structure
 
-## How to Use
+/Nestopia-Financial-Simulator/
+├── index.html         – Main UI
+├── script.js          – Rendering logic
+└── data.js            – Financial dataset (users, revenue, costs, EBITDA)
 
-1. Clone or download the repo
-2. Open `index.html` in your browser
-3. Enter initial user count and growth rate
-4. Choose display month/year/cumulative
-5. View live revenue output from all sources
-6. Adjust inputs to simulate different forecasts
-
----
-
-## Authors
-
-**Kris Ericsson**  
-Founder, Nestopia  
-📍 London, UK  
-💬 [@krisericsson](https://www.linkedin.com/in/krisericsson/)
-
-**Atlas (AI Co-Pilot)**  
-Powered by OpenAI
+👥 Contributors
+	•	Kris Ericsson – Founder & Product Lead
+	•	Atlas – AI Strategist & Technical Lead
+	•	Gemini – Financial Validation & Model Integrity
 
 ---
