@@ -52,3 +52,28 @@
 - Visual layout improved but styling refinements (alignment, spacing) will be handled separately.
 
 ---
+✅ Sprint 3 – Complete: Cost Section & EBITDA
+
+Sprint Goals:
+	•	Add clean cost section below revenue
+	•	Introduce placeholder logic for operating costs
+	•	Ensure EBITDA line updates based on salaries and total cost assumptions
+	•	Update output layout to clearly separate Revenue and Costs
+
+What Was Done:
+	•	Created architecture for the cost section using clean, stackable HTML blocks
+	•	Added total salaries logic, including Employer NI and Pension
+	•	Built early logic for total operating costs using placeholder values
+	•	Introduced visual EBITDA output beneath all costs
+	•	Cleaned up output layout for clarity between Revenue and Cost sections
+
+Pending/Deferred:
+	•	Monthly cost breakdowns per category (from FS model)
+	•	Dynamic user and revenue source activation logic
+	•	Dropdown toggles for category-level cost visibility (planned for Sprint 4)
+
+Date Completed: Saturday, 7 June 2025
+Owner: Kris Ericsson
+Status: ✅ Complete
+Next Sprint: Sprint 4 – Operating Cost Breakdown & Revenue Channel Activation
+
