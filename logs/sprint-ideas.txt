@@ -1,1 +1,74 @@
-Sprint 2: Add salary engine + EBITDA tracker
+## 📈 Nestopia Financial Simulator – SPRINTS.md
+
+This document logs all active and completed sprints for the Nestopia FS Simulator build. All changes, completions, and milestones are tracked here to maintain velocity and alignment.
+
+---
+
+### ✅ Sprint 1 – Core Revenue Engine (Completed 06/06/2025)
+- Built real-time user input engine (start users, month/year)
+- Modeled user growth logic across 60 months
+- Added revenue logic:
+  - ID Verification (30% of users @ £1.49 one-time)
+  - Subscriptions (30% of users @ £6.99/£9.99 monthly split)
+  - Affiliate Revenue (grows from 15% to 30%)
+  - Landlord Revenue (1 landlord per 30 users @ £15)
+- Revenue totals update dynamically
+- UI layout refreshed for clarity and output readability
+- Logged in GitHub and validated
+
+---
+
+### ✅ Sprint 2 – Salary Engine & EBITDA (Completed 06/06/2025)
+- Built salary engine for core roles (toggle employees on/off)
+- Implemented:
+  - Employer NI (15%)
+  - Pension (3%)
+- Total salary costs displayed
+- EBITDA calculated in real time (Revenue - Salary)
+- Clean UI layout for cost section
+- Logged in GitHub (`devlog.md`) and personal log
+
+---
+
+### 🔄 Sprint 3 – Clean Cost Section & Variable Cost Inputs (In Progress)
+- Add cost section under revenue:
+  - Hosting
+  - Marketing
+  - Legal
+  - Other Operating Costs
+- Inputs editable by user or fixed for now
+- Show Total Costs and updated EBITDA
+- UI styling matched to revenue section
+- ETA: Complete by EOD 07/06
+
+---
+
+### 🟡 Sprint 4 – Forecast Toggle System (Next)
+- Add predefined growth profiles:
+  - Predicted (Default from FS Model)
+  - Conservative (flat/low growth)
+  - Aggressive (scaled-up growth)
+  - Manual (user sets custom growth)
+- Revenue adapts based on user growth curve
+- Toggle added to interface
+- Logic already validated, needs UI hookup
+
+---
+
+### 🟠 Sprint 5 – AI FS Chat Assistant (Backlog – Scheduled for Sunday)
+- Export full FS model to JSON
+- Host via Supabase (or inline if faster)
+- Integrate OpenAI API
+- System prompt restricts answers to FS model only
+- UI toggle: “Ask the Financial Model”
+- Completion goal: Monday 10/06
+
+---
+
+### 🔵 Sprint 6 – Investor Mode Polish & Final Embedding (Final Sprint)
+- Add toggle for "Investor View"
+- Simplified view with summary numbers
+- Final UI polish, styling, brand alignment
+- Embed simulator in public-facing Data Room
+- Final walkthrough and test with Anna
+
