@@ -1,74 +1,201 @@
-## 📈 Nestopia Financial Simulator – SPRINTS.md
+🗭 Nestopia Financial Simulator — Sprint Roadmap (Investor Build Phase)
 
-This document logs all active and completed sprints for the Nestopia FS Simulator build. All changes, completions, and milestones are tracked here to maintain velocity and alignment.
+This document is the source of truth for the Nestopia Financial Simulator sprint plan. All features, sequencing, and accountability are tracked here.
 
----
+📅 Sprint 1 – Core Engine Build (Complete)
+Mission: Build the foundational engine that links user growth to total revenue.
 
-### ✅ Sprint 1 – Core Revenue Engine (Completed 06/06/2025)
-- Built real-time user input engine (start users, month/year)
-- Modeled user growth logic across 60 months
-- Added revenue logic:
-  - ID Verification (30% of users @ £1.49 one-time)
-  - Subscriptions (30% of users @ £6.99/£9.99 monthly split)
-  - Affiliate Revenue (grows from 15% to 30%)
-  - Landlord Revenue (1 landlord per 30 users @ £15)
-- Revenue totals update dynamically
-- UI layout refreshed for clarity and output readability
-- Logged in GitHub and validated
+Deliverables:
 
----
+Real-time user input logic for Month/Year selector
 
-### ✅ Sprint 2 – Salary Engine & EBITDA (Completed 06/06/2025)
-- Built salary engine for core roles (toggle employees on/off)
-- Implemented:
-  - Employer NI (15%)
-  - Pension (3%)
-- Total salary costs displayed
-- EBITDA calculated in real time (Revenue - Salary)
-- Clean UI layout for cost section
-- Logged in GitHub (`devlog.md`) and personal log
+Hardwired 60-month user growth array from FS model
 
----
+Total revenue calculation from FS model
 
-### 🔄 Sprint 3 – Clean Cost Section & Variable Cost Inputs (In Progress)
-- Add cost section under revenue:
-  - Hosting
-  - Marketing
-  - Legal
-  - Other Operating Costs
-- Inputs editable by user or fixed for now
-- Show Total Costs and updated EBITDA
-- UI styling matched to revenue section
-- ETA: Complete by EOD 07/06
+UI layout: dropdown selector, summary output, clean HTML/CSS styling
 
----
+✅ Note: Revenue stream breakdown not yet implemented (only totalRevenue)
 
-### 🟡 Sprint 4 – Forecast Toggle System (Next)
-- Add predefined growth profiles:
-  - Predicted (Default from FS Model)
-  - Conservative (flat/low growth)
-  - Aggressive (scaled-up growth)
-  - Manual (user sets custom growth)
-- Revenue adapts based on user growth curve
-- Toggle added to interface
-- Logic already validated, needs UI hookup
+📅 Sprint 2 – Operating Costs & EBITDA Logic (Complete)
+Mission: Add backend cost engine using FS model and show monthly profitability.
 
----
+Deliverables:
 
-### 🟠 Sprint 5 – AI FS Chat Assistant (Backlog – Scheduled for Sunday)
-- Export full FS model to JSON
-- Host via Supabase (or inline if faster)
-- Integrate OpenAI API
-- System prompt restricts answers to FS model only
-- UI toggle: “Ask the Financial Model”
-- Completion goal: Monday 10/06
+All 17 operating cost categories hardcoded from FS model
 
----
+Monthly totalOperatingCosts[] calculated
 
-### 🔵 Sprint 6 – Investor Mode Polish & Final Embedding (Final Sprint)
-- Add toggle for "Investor View"
-- Simplified view with summary numbers
-- Final UI polish, styling, brand alignment
-- Embed simulator in public-facing Data Room
-- Final walkthrough and test with Anna
+EBITDA displayed in real-time (ebitda = totalRevenue - totalOperatingCosts)
+
+✅ Pension and NI embedded in totals via Gemini’s P&L output
+
+✅ Salaries included in the monthly operating costs
+
+📅 Sprint 3 – Full Financial Sync & Simulator Repair (Complete)
+Mission: Rebuild broken logic with Gemini, validate against Excel, and restore full data integrity.
+
+Deliverables:
+
+Gemini fully onboarded and managing FS model parsing
+
+Clean monthly values for users, revenue, costs, and EBITDA
+
+Simulator now reflects actual FS model outputs with 100% parity
+
+Verified working dropdown and outputs across all 60 months
+
+🔄 Sprint 4 – Forecast Toggle System (In Progress)
+Mission: Let users switch between multiple growth scenarios.
+
+Deliverables:
+
+Toggle UI for four options:
+
+Baseline (FS model)
+
+Conservative
+
+Aggressive
+
+Manual Override
+
+Dynamic injection of users[] array per profile
+
+Revenue and EBITDA auto-update when growth profile changes
+
+✅ Note: Gemini will validate alternate curves
+
+🔒 Sprint 5 – AI FS Chat Assistant (Blocked: Depends on Sprint 4)
+Mission: Add OpenAI-powered assistant to answer investor questions about the financial model.
+
+Deliverables:
+
+FS model exported to structured JSON
+
+Hosted in Supabase (or inline for MVP)
+
+GPT-4 powered assistant restricted to model scope via system prompt
+
+Toggle or button: “Ask the Model”
+
+Optional voice or PDF export
+
+🟡 Sprint 6 – UI & Layout Upgrade (Next)
+Mission: Upgrade visual presentation for investor polish and clarity.
+
+Deliverables:
+
+Two-column layout (Controls + Output)
+
+Card-style boxes with shadows and spacing
+
+Apply Nestopia branding:
+
+Primary: #FA5926
+
+Secondary: #000045
+
+Responsive mobile-friendly design
+
+Nestopia logo added top-left
+
+Improved typography, spacing, and hierarchy
+
+View selector expanded (Summary | Revenue Breakdown | Cost Breakdown)
+
+🔄 Sprint 7 – Growth Scenario Toggle + Custom Input Mode
+Mission: Fully simulate user growth changes and their financial impact.
+
+Deliverables:
+
+Dropdown for growth scenario selection (Baseline, Conservative, Aggressive, Custom)
+
+Manual entry of user growth or monthly user values
+
+Live rerendering of:
+
+Users[]
+
+Total revenue
+
+EBITDA
+
+Optional: Chart view of user growth over time
+
+🔄 Sprint 8 – Revenue Breakdown by Type
+Mission: Display the four revenue lines separately to show diversification and maturity.
+
+Deliverables:
+
+New breakdown view:
+
+ID Verification Revenue
+
+Subscription Revenue
+
+Affiliate Revenue
+
+Landlord Revenue
+
+Monthly and cumulative values
+
+Add tooltips for how/when each revenue stream activates
+
+Optional: Bar/pie chart visualisation
+
+🧐 Sprint 9 – GPT-Integrated Financial Assistant
+Mission: Investors can “talk to the model” and ask questions in plain English.
+
+Capabilities:
+
+"Summarise Month 24"
+
+"Explain how EBITDA is calculated"
+
+"Compare Conservative vs Aggressive"
+
+"What happens if growth is 5% MoM?"
+
+Embedded chat box in UI
+
+Optional: PDF download of answers
+
+💸 Sprint 10 – CAC, LTV, and Unit Economics Module
+Mission: Show core unit economics clearly.
+
+Deliverables:
+
+Input CAC toggle: baseline, amortised, front-loaded
+
+LTV calculated from subscription revenue lifetime
+
+Add LTV:CAC ratio logic
+
+CAC payback period displayed
+
+Display margin under each CAC model
+
+💰 Sprint 11 – Runway, Burn Rate & Investment Impact
+Mission: Add real-world investment simulations for pre-seed/seed readiness.
+
+Deliverables:
+
+Monthly burn rate = Costs - Revenue
+
+Cumulative burn tracked
+
+Input field: "Cash in Bank" → shows dynamic runway
+
+Investment toggle (amount + month) → extends runway
+
+Break-even month highlighted
+
+Optional flags:
+
+"Cumulative profit positive"
+
+"You achieve profitability with £X raised"
+
+
 
