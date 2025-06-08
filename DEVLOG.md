@@ -1,4 +1,5 @@
 🗓️ June 6, 2025 – Sprint #1 – Core Simulator Engine
+
 ✅ What Was Completed
 Built initial financial simulator with user input
 Added growth rate and user count logic
