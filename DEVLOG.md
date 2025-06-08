@@ -109,11 +109,21 @@ Next Sprint: Sprint 4 – Operating Cost Breakdown & Revenue Channel Activation
 - Recovered from broken state to fully working interface via Gemini's intervention  
 - All hardcoded errors, parser bugs, and UI blockers resolved  
 
-✅ Sprint 6 – UI & Layout Upgrade (Completed)
-- Added clean two-column layout with responsive design
-- Integrated Nestopia brand colors (#FA5926 primary, #000045 secondary)
-- Implemented soft card-style UI for financial summary
-- Added Nestopia logo to top of simulator
-- Fixed character encoding issues (currency symbols)
-- All layout and display logic validated by Gemini
-- Output now clean, mobile-friendly, and professional
+✅ Sprint 6 – UI & Layout Upgrade
+	•	Status: Completed
+	•	Date: 8 June 2025
+	•	Lead: Atlas (validated by Gemini)
+
+What was built:
+	•	Rebuilt the simulator interface with a clean two-column layout
+	•	Styled financial output as card components with responsive design
+	•	Applied Nestopia brand colors: #FA5926 (primary), #000045 (secondary)
+	•	Implemented mobile responsiveness via Flexbox and media queries
+	•	Added Nestopia logo (25% scale, aligned above title)
+	•	Fixed encoding bugs with currency formatting
+	•	Ensured all files (HTML, CSS, JS, logo) are integrated and validated
+	•	Gemini validated all front-end components and JS logic
+
+Outcome:
+	•	The simulator now feels visually professional and investor-ready
+	•	Clear structure prepares us for scenario toggles, growth curves, and AI chat in Sprints 7–9
