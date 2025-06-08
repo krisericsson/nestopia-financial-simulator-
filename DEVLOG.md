@@ -108,3 +108,12 @@ Next Sprint: Sprint 4 – Operating Cost Breakdown & Revenue Channel Activation
 - Total Revenue, Operating Costs, and EBITDA are all live, formatted, and test-validated  
 - Recovered from broken state to fully working interface via Gemini's intervention  
 - All hardcoded errors, parser bugs, and UI blockers resolved  
+
+✅ Sprint 6 – UI & Layout Upgrade (Completed)
+- Added clean two-column layout with responsive design
+- Integrated Nestopia brand colors (#FA5926 primary, #000045 secondary)
+- Implemented soft card-style UI for financial summary
+- Added Nestopia logo to top of simulator
+- Fixed character encoding issues (currency symbols)
+- All layout and display logic validated by Gemini
+- Output now clean, mobile-friendly, and professional
