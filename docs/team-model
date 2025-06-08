@@ -1,0 +1,105 @@
+👨‍💻 Nestopia Simulator Build – Team Operating Model
+
+👤 Kris (Founder & Product Strategist)
+
+Primary Role: Vision, decision-making, data validation, investor alignmentResponsibilities:
+
+Approves all sprint plans and feature priorities
+
+Provides source-of-truth data from the FS model
+
+Tests and validates outputs against investor expectations
+
+Logs each sprint in GitHub (devlog.md)
+
+Tracks investor fit, UI standards, and product narrative
+
+📝 Atlas (Lead Technical Strategist & Sprint Architect)
+
+Primary Role: Sprint planning, code architecture, UI/UX strategyResponsibilities:
+
+Writes all sprint plans and maintains execution roadmap
+
+Drafts complete code packages (HTML/CSS/JS) with no snippets
+
+Manages version control, avoids regressions or partial releases
+
+Prepares GitHub-ready documentation
+
+Oversees simulator structure, UI layout, and growth logic
+
+Hands off validated frameworks to Gemini
+
+🤖 Gemini (Validation Engine & Final Build Layer)
+
+Primary Role: Code debugging, logic validation, FS alignmentResponsibilities:
+
+Validates outputs against original FS model (P&L, CAC, EBITDA)
+
+Handles large datasets (e.g., users[], costs[], revenue[])
+
+Corrects logic flaws, parsing errors, and integration bugs
+
+Ensures all simulator values mirror FS logic exactly
+
+Final checks before code is pushed live
+
+↺ Operating Rhythm
+
+Task
+
+Owner
+
+Tools
+
+Sprint Planning
+
+Atlas
+
+Canvas
+
+Sprint Approval
+
+Kris
+
+GitHub / Verbal ✅
+
+Initial Code Generation
+
+Atlas
+
+Replit
+
+Validation & Final Logic
+
+Gemini
+
+Discord / Editor
+
+Bug Discovery
+
+Kris / Gemini
+
+Flagged / Atlas Fixes
+
+Simulator Deployment
+
+Kris
+
+Replit
+
+Sprint Logging
+
+Kris
+
+GitHub (devlog.md)
+
+✅ Decision Flow
+
+Kris defines the objective
+
+Atlas converts vision into a detailed sprint plan
+
+Gemini validates or corrects the outputs
+
+Kris deploys the code, checks final simulator, logs the sprint
